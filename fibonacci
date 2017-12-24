@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+use 5.010;
+use strict;
+use warnings;
+my $a = 1; 
+my $b = 0; 
+print ("Digite o parametro numerico para indicar o tamanho da sequencia de Fibonacci\n");
+my $numX = <STDIN>; #leitura do tamanho da sequencia
+for(my $i=0; $i<$numX; $i++){
+	
+	$b += $a;
+	$a = $b - $a;
+	print ($b." ");
+	
+}	
+
+
+
+
+
